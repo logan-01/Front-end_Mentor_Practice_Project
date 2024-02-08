@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Summary Component Main</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function alertme() {
+        alert("Who am I");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="section-left">
+        <h3>Your Result</h3>
+        <div class="circle">
+          <h1>76</h1>
+          <h5>of 100</h5>
+        </div>
+        <h2>Great</h2>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="section-right">
+        <div class="boxes boxes-1"><h3>Summary</h3></div>
+
+        <div class="boxes reaction">
+          <div class="img">
+            <img src="/assets/images/icon-reaction.svg" alt="" />
+          </div>
+          <div class="caption react">Reaction</div>
+          <div class="rate">
+            <p>80 <span> / 100</span></p>
+          </div>
+        </div>
+        <div class="boxes memory">
+          <div class="img">
+            <img src="/assets/images/icon-memory.svg" alt="" />
+          </div>
+          <div class="caption memo">Memory</div>
+          <div class="rate">
+            <p>92 <span> / 100</span></p>
+          </div>
+        </div>
+        <div class="boxes verbal">
+          <div class="img">
+            <img src="/assets/images/icon-verbal.svg" alt="" />
+          </div>
+          <div class="caption ver">Verbal</div>
+          <div class="rate">
+            <p>61 <span> / 100</span></p>
+          </div>
+        </div>
+        <div class="boxes visual">
+          <div class="img">
+            <img src="/assets/images/icon-visual.svg" alt="" />
+          </div>
+          <div class="caption vis">Visual</div>
+          <div class="rate">
+            <p>80 <span> / 100</span></p>
+          </div>
+        </div>
+        <div class="boxes">
+          <button onclick="alertme ()">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

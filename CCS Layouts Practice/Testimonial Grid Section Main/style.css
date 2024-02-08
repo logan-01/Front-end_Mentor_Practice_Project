@@ -1,0 +1,132 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  position: relative;
+}
+
+main {
+  /* border: 4px violet solid; */
+  display: flex;
+  flex-direction: column;
+}
+.more-content {
+  flex-basis: 80%;
+}
+.box {
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: -6px 9px 14px -5px rgba(0, 0, 0, 0.85);
+}
+
+.upper-section {
+  /* border: 3px blue solid; */
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-secA {
+  /* border: 5px orange solid; */
+  flex-basis: 70%;
+  background-color: hsl(263, 55%, 52%);
+  color: #fff;
+  position: relative;
+  z-index: 0;
+}
+
+.upper-secB {
+  /* border: 5px pink solid; */
+  flex-basis: 30%;
+  background-color: hsl(217, 19%, 35%);
+  color: #fff;
+}
+.lower-section {
+  /* border: 3px green solid; */
+  display: flex;
+  flex-direction: column;
+}
+.lower-secA {
+  /* border: 3px green solid; */
+  flex-basis: 30%;
+  background-color: hsl(0, 0%, 100%);
+}
+.lower-secB {
+  /* border: 3px yellowgreen solid; */
+  flex-basis: 70%;
+  background-color: hsl(219, 29%, 14%);
+  color: #fff;
+}
+.aside {
+  /* border: 3px red solid; */
+  flex-basis: 20%;
+  background-color: hsl(0, 0%, 100%);
+}
+.header {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+.username {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10px;
+  position: relative;
+  left: 20px;
+}
+.username h3 {
+  margin: 0px;
+}
+.username .description {
+  opacity: 50%;
+}
+.profile {
+  border-radius: 50%;
+}
+.upper-secA .profile,
+.lower-secB .profile {
+  border: 3px #835db2 solid;
+}
+
+.content .highlight {
+  font-size: 1.5rem;
+  font-weight: 600;
+  z-index: 1;
+}
+.content .extra {
+  font-size: 1rem;
+  opacity: 70%;
+}
+
+#quote {
+  position: absolute;
+  right: 6%;
+  top: 0px;
+  z-index: -1;
+  /* width: 150px; */
+  height: 145px;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .upper-section,
+  .lower-section {
+    flex-direction: row;
+  }
+
+  .box {
+    padding-bottom: 0px;
+  }
+  #quote {
+    right: 20%;
+  }
+}
